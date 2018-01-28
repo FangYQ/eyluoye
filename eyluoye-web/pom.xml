@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>xin.eyluoye</groupId>
+        <artifactId>eyluoye</artifactId>
+        <version>1.0.0</version>
+    </parent>
+    <artifactId>eyluoye-web</artifactId>
+    <packaging>war</packaging>
+    <name>eyluoye-web Maven Webapp</name>
+    <url>http://www.eyluoye.xin</url>
+    <description>管理后台</description>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>xin.eyluoye</groupId>
+            <artifactId>eyluoye-shiro</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>xin.eyluoye</groupId>
+            <artifactId>eyluoye-orm</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>xin.eyluoye</groupId>
+            <artifactId>eyluoye-quartz</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>xin.eyluoye</groupId>
+            <artifactId>eyluoye-generator</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>xin.eyluoye</groupId>
+            <artifactId>eyluoye-base</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>xin.eyluoye</groupId>
+            <artifactId>eyluoye-wechat</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <finalName>eyluoye</finalName>
+    </build>
+
+</project>

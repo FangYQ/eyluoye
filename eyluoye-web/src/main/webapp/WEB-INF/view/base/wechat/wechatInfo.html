@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:include="include/header_css :: header('公众号信息')"></head>
+<body>
+<div id="eyluoye" class="container-fluid" v-cloak>
+	<div class="row">
+		<div class="col-md-12 no-padding">
+			<div class="panel panel-default">
+				<div class="panel-heading">公众号信息</div>
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-md-6 form-inline pull-left">
+							<table>
+								<tr>
+									<td>
+										<b>appid:</b>&nbsp;&nbsp;
+									</td>
+									<td>
+										<div class="form-group">
+											<input name="appid" id="appid" class="form-control" placeholder="请输入appid" style="width: 220px;" />
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<b>appsecret:</b>&nbsp;&nbsp;
+									</td>
+									<td>
+										<div class="form-group">
+											<input name="secret" id="secret" class="form-control" placeholder="请输入appsecret" style="width: 220px;" />
+										</div>
+									</td>
+									<td>
+										<div class="form-group" style="margin-left: 10px;">
+											<a class="btn btn-primary" @click="resetAppInfo"><i class="fa fa-gear"></i>&nbsp;重置</a>
+										</div>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="panel panel-default" style="margin-top: 15px;">
+						<div class="panel-heading">关注用户</div>
+						<div class="row">
+							<table id="dataGrid"></table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+<div th:include="include/footer_js :: footer"></div>
+<script th:src="@{/statics/js/base/wechat/wechatInfo.js}"></script>
+</body>
+</html>
