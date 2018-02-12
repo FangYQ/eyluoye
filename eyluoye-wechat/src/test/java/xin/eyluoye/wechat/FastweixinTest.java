@@ -57,7 +57,7 @@ public class FastweixinTest {
 //        uploadMedia(config);
 //        downloadMedia(config);
 //        getUserInfo(config);
-        getMenu(config);
+//        getMenu(config);
 //        addCustomAccount(config);
 //        getOauthPageUrl(config);
 //        getToken(config);
@@ -103,13 +103,13 @@ public class FastweixinTest {
         MenuButton main1 = new MenuButton();
         main1.setType(MenuType.CLICK);
         main1.setKey("main1");
-        main1.setName("测试");
+        main1.setName("关于");
         //准备子菜单
         MenuButton sub1 = new MenuButton();
         sub1.setKey("sub1");
-        sub1.setName("授权");
+        sub1.setName("官网");
         sub1.setType(MenuType.VIEW);
-        sub1.setUrl("https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxafb7b8f9457b5d50&redirect_uri=http://121.40.140.41/erhuluanzi/app/testGet&response_type=code&scope=snsapi_userinfo&state=123#wechat_redirect");
+        sub1.setUrl("https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxafb7b8f9457b5d50&redirect_uri=http://http://kindergarten.eyluoye.xin#wechat_redirect");
         MenuButton sub2 = new MenuButton();
         sub2.setKey("sub2");
         sub2.setName("点击");
